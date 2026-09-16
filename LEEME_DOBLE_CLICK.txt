@@ -1,0 +1,20 @@
+GESTION DE CLASE V5.1 - MODO DOBLE CLIC
+
+1. Descomprime toda esta carpeta en un lugar fijo.
+2. La primera vez, haz doble clic en INICIAR_GESTION_CLASE.bat.
+   El sistema prepara automaticamente sus componentes.
+3. Cuando termine, se abrira el navegador en:
+   http://localhost:5173
+4. Para las siguientes veces, solo vuelve a hacer doble clic en
+   INICIAR_GESTION_CLASE.bat.
+5. Para cerrar completamente el sistema, haz doble clic en
+   DETENER_GESTION_CLASE.bat.
+6. Opcional: ejecuta CREAR_ACCESO_DIRECTO.bat una vez para crear
+   un icono en el Escritorio.
+
+REQUISITOS DEL EQUIPO
+- Windows 10/11
+- Python 3.12
+- Node.js LTS
+
+No necesitas abrir CMD ni ejecutar uvicorn/npm manualmente.

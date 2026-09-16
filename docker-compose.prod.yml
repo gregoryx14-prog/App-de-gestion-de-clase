@@ -1,0 +1,16 @@
+services:
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    ports: ["8000:8000"]
+    volumes: ["./data:/app/data"]
+    environment:
+      GESTION_SECRET_KEY: "CAMBIAR-ESTA-CLAVE-EN-PRODUCCION"
+      GESTION_TOKEN_MINUTES: "480"
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    ports: ["80:80"]
+    depends_on:
+      backend:
+        condition: service_healthy
